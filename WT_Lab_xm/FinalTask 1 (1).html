@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Global Tech Connect Registration</title>
+
+<link rel="stylesheet" type="text/css" href="tab.css">
+
+<script src="set.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Global Tech Connect</h1>
+<h2>Event Registration Form</h2>
+
+<form onsubmit="return collectData();">
+
+<table>
+
+<tr>
+
+<td>Full Name</td>
+
+<td>
+<input type="text"
+id="FullName"
+placeholder="Enter your full name">
+</td>
+
+<td>
+<p id="NameErr"></p>
+</td>
+
+</tr>
+
+<tr>
+
+<td>Professional Email</td>
+
+<td>
+<input type="text"
+id="Email"
+placeholder="Enter your email">
+</td>
+
+<td>
+<p id="EmailErr"></p>
+</td>
+
+</tr>
+
+<tr>
+
+<td>Company / Institution</td>
+
+<td>
+<input type="text"
+id="Company"
+placeholder="Enter company or institution">
+</td>
+
+<td>
+<p id="CompanyErr"></p>
+</td>
+
+</tr>
+
+<tr>
+
+<td>Attendance Type</td>
+
+<td>
+
+<input type="radio" name="Attendance" value="Virtual"> Virtual
+
+<input type="radio" name="Attendance" value="In-Person"> In-Person
+
+</td>
+
+<td>
+<p id="AttendanceErr"></p>
+</td>
+
+</tr>
+
+<tr>
+
+<td colspan="3" style="text-align:center;">
+
+<button type="submit">
+Register
+</button>
+
+</td>
+
+</tr>
+
+</table>
+
+</form>
+
+<br>
+
+<button type="button" id="toggleBtn" onclick="toggleAnalytics()">
+Show Event Analytics
+</button>
+
+<div id="analyticsPanel">
+
+<p>Total Registrants: <span id="totalRegistrants">0</span></p>
+
+<p>Virtual Attendance: <span id="virtualCount">0</span></p>
+
+<p>In-Person Attendance: <span id="inPersonCount">0</span></p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
