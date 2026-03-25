@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AIUB | Text Analyzer Tool</title>
+    <link rel="stylesheet" type="text/css" href="lazy.css">
+    <script src="pet.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Text Analyzer Tool</h1>
+
+    <div class="form-section">
+        <table>
+            <tr>
+                <td>Paste your paragraph below:</td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea id="inputText" placeholder="Enter your text here..." rows="8" style="width: 95%; padding: 10px; border-radius: 5px;"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><p id="InputErr"></p></td>
+            </tr>
+            <tr>
+                <td style="text-align:center;">
+                    <button type="button" onclick="analyzeData()">Analyze Text</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+
+    <button type="button" id="toggleBtn" onclick="toggleAnalysis()">
+        Show Analysis Result
+    </button>
+
+    <div id="analyticsPanel">
+        <h3>Text Summary:</h3>
+        <p style="color: black;">Total Characters: <span id="charCount" style="font-weight: bold;">0</span></p>
+        <p style="color: black;">Total Words: <span id="wordCount" style="font-weight: bold;">0</span></p>
+        <hr>
+        <h3 style="color: #1f3c88;">Reversed Text:</h3>
+        <div id="reversedText" style="background: white; padding: 10px; border-radius: 5px; color: #333; font-style: italic; min-height: 20px;">
+            (Waiting for input...)
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
