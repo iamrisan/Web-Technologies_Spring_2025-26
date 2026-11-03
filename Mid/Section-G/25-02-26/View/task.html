@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <script src="../JS/script.js"></script>
+  </head>
+  <body>
+    <script>
+      document.write("<h1>Login Form</h1>");
+      const arr = ["Banana", "Apple", "Cherry", "Berry"];
+      arr.forEach((element, index) => {
+        document.writeln("Element-", index + 1, "- ", element);
+        document.writeln("<br/>");
+      });
+
+      document.writeln("<br/><br/> Printing through the MAP <br/> ");
+      arr.map((element, index) => {
+        document.writeln("Element-", index + 1, "- ", element);
+        document.writeln("<br/>");
+      });
+    </script>
+    <!-- <form onsubmit="return collectFormData();"> -->
+    <table>
+      <tr>
+        <td>Student Email <span style="color: red">*</span></td>
+        <td>
+          <input
+            type="text"
+            placeholder="Enter your email"
+            id="email"
+            name=""
+            onchange="return getEmail();"
+          />
+        </td>
+        <td>
+          <p id="emailErr" style="color: red"></p>
+        </td>
+      </tr>
+      <tr>
+        <td>Password</td>
+        <td>
+          <input
+            type="text"
+            placeholder="Enter your password"
+            id="password"
+            name=""
+            onkeyup="return getPassword();"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <button type="submit" onclick="return collectFormData();">
+            Submit
+          </button>
+        </td>
+      </tr>
+    </table>
+    <!-- </form> -->
+  </body>
+</html>

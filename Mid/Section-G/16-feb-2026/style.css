@@ -22,7 +22,6 @@ p.class-selector {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 h1,
-h3,
 p {
   font-style: italic;
 }
@@ -31,20 +30,64 @@ p {
   position: relative;
 }
 .btn1 {
-  /* margin-left: 40px;
-  margin-top: 40px; */
+  margin-left: 40px;
+  /*margin-top: 40px; */
 
-  padding-left: 40px;
+  /* padding-left: 40px;
   padding-right: 40px;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 10px; */
+  padding: 10px 40px 10px 40px;
   position: absolute;
   z-index: 1;
 }
 
 .btn2 {
+  margin: 50px 0px 0px 0px;
   padding: 10px 40px 10px 40px;
   position: absolute;
-  left: 30px;
-  z-index: 2;
+
+  z-index: -2;
+}
+.card-container {
+  display: inline-block;
+  display: flex;
+  gap: 10px;
+}
+
+.card {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px 5px 5px 5px;
+}
+
+img {
+  border-radius: 10px;
+}
+
+.title {
+  position: relative;
+  top: 0px;
+}
+
+.model {
+  position: relative;
+  top: -15px;
+}
+
+.price {
+  position: relative;
+  top: -30px;
+}
+
+.buy {
+  position: absolute;
+  top: 85%;
+  margin: auto;
+  background-color: orangered;
+  color: white;
+  border: none;
+  padding: 2px 8px 2px 8px;
+  border-radius: 10px;
 }

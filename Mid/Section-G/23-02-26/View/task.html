@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <script src="../JS/script.js"></script>
+  </head>
+  <body>
+    <script>
+      document.write("<h1>Login Form</h1>");
+    </script>
+    <form onsubmit="return collectFormData();">
+      <table>
+        <tr>
+          <td>Student Email <span style="color: red">*</span></td>
+          <td>
+            <input
+              type="text"
+              placeholder="Enter your email"
+              id="email"
+              name=""
+            />
+          </td>
+          <td>
+            <p id="emailErr" style="color: red"></p>
+          </td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td>
+            <input
+              type="text"
+              placeholder="Enter your password"
+              id="password"
+              name=""
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="submit">Submit</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

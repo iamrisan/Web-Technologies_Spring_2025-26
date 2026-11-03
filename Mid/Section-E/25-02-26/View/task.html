@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <script src="../JS/script.js"></script>
+  </head>
+  <body>
+    <script>
+      document.write("<h1>Student Login Form</h1>");
+      const a = 0.2;
+      const b = 0.7;
+      document.write("Sum is..", a + b);
+      console.log("Sum is..", a + b);
+    </script>
+    <form>
+      <table>
+        <tr>
+          <td>Student Email</td>
+          <td>
+            <input
+              type="text"
+              placeholder="Enter your Email"
+              id="email"
+              name=""
+              onchange="return getEmail();"
+            />
+          </td>
+          <td>
+            <p id="emailErr" style="color: red"></p>
+          </td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td>
+            <input
+              type="password"
+              placeholder="Enter your Password"
+              id="password"
+              onkeyup="return getPassword();"
+            />
+          </td>
+          <td>
+            <p id="passwordErr" style="color: red"></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="submit" onclick="return collectData();">
+              Submit
+            </button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
